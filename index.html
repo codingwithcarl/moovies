@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/loaders.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/cow.png">
+    <script src="https://kit.fontawesome.com/f6590700de.js"></script>
+    <title>Moovies</title>
+</head>
+<body class="bg-medium-grey">
+
+    <div class="page-overlay bg-dark-grey d-flex justify-content-center align-items-center">
+      <div class="loader">
+        <div class="cube-transition">
+          <div></div><div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-medium-grey px-0" id="topnav">
+      <!-- Navbar brand -->
+      <nav class="navbar navbar-dark bg-medium-grey">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="images/cow.png" width="55" height="55" class="d-inline-block align-middle" alt="Moovies">
+          <span class="lead font-weight-bold" id="website-name">Moovies</span>
+        </a>
+      </nav>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-medium-grey justify-content-center" id="topnav-content">
+        <form class="ml-md-5 p-4 p-md-0 form-inline justify-content-end" id="search-form">
+          <input class="form-control m-0 border-0 rounded-0" id="search-input" type="search" placeholder="Search moovies" aria-label="Search">
+          <button class="btn btn-dark m-0 border-0 rounded-0" id="search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- Main Content -->
+        <div class="p-0 col-12 col-md-9 offset-md-3 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2">
+          <div id="content"><!-- Dynamically loaded page content goes here --></div>
+        </div>
+        <!-- END Main Content -->
+
+        <!-- Page Footer -->
+        <div class="mt-5 mb-3 col-md-9 offset-md-3 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2">
+          <footer class="mt-5 d-flex p-4 justify-content-center">
+            <a href="https://www.themoviedb.org/documentation/api" target="_blank">
+              <img id="powered-by" src="images/tmdb.svg" alt="Powered By The Movie DB">
+            </a>
+          </footer>
+        </div>
+      </div>
+      <!-- END Page Footer -->
+
+    </div><!-- END container -->
+
+
+    <!--JavaScript-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
